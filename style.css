@@ -1,0 +1,39 @@
+*,
+*::after,
+**::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#card{
+    position: relative;
+    width: 30% ;
+    height: 60%;
+    box-shadow: 1px 1px 25px 1px #000;
+    border-radius: 1rem;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+
+}   
+
+.card-header{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.card-header > img{
+    perspective: 2000px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
